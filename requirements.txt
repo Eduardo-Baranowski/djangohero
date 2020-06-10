@@ -31,7 +31,6 @@ coloredlogs==14.0
 commonmark==0.9.1
 contextlib2==0.6.0.post1
 cryptography==2.9.2
-cupshelpers==1.0
 cycler==0.10.0
 dataclasses==0.6
 decorator==4.4.2
