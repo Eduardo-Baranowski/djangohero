@@ -93,7 +93,6 @@ joblib==0.14.1
 JPype1==0.7.5
 jupyter-client==6.0.0
 jupyter-core==4.6.3
-kazam==1.4.5
 keyutils==0.6
 kiwisolver==1.2.0
 kombu==4.6.8
