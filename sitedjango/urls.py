@@ -5,6 +5,7 @@ from sitedjango import views
 
 urlpatterns = [
     path('', views.home), 
+    path('home/', views.home), 
     path('formulario/', views.formulario), 
     path('sobre/', views.sobre),
     path('servicos/', views.servicos),
