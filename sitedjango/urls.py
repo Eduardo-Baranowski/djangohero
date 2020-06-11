@@ -5,4 +5,7 @@ from sitedjango import views
 
 urlpatterns = [
     path('', views.home), 
+    path('formulario/', views.formulario), 
+    path('formulario/insereFormulario', views.insereFormulario), 
+    
 ]

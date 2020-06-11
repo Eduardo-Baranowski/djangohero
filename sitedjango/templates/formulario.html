@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+    <style>
+    label, textarea {
+        font-size: .8rem;
+        letter-spacing: 1px;
+    }
+    textarea {
+        padding: 10px;
+        line-height: 1.5;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 1px #999;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    </style>
+    <main role="main" class="jumbotron">
+    <h1>Dados cadastrais</h1>
+    <h5>Preencha o formulário com os seus dados para o cadastro. Campos com * são obrigatórios!</h5>
+    <h2>Dados Pessoais</h2>
+    <form action="insereFormulario" method="post">
+    {% csrf_token %}
+    <label>Nome Completo*</label>
+    <input name="name" type="text" required>
+    <br><br>
+    <label>Data de Nascimento *</label>
+    <input name="dataNascimento" type="text" required>
+    <br><br>    
+    <label>Natural de *</label>
+    <input name="naturalidade" type="text" placeholder="Ex: Curitiba - PR" required>
+    <br><br>        
+    <label>CPF *</label>
+    <input name="cpf" type="text" required>
+    <br><br>        
+    <label>RG *</label>
+    <input name="rg" type="text" required>
+    <br><br>    
+    <label>Data de Expedição do RG *</label>
+    <input name="datarG" type="text" required>
+    <br><br>           
+    <label>Orgão Emissor *</label>
+    <input name="orgaoemissor" type="text" required>
+    <br><br>                 
+    <label>Estado Civil</label>
+        <select name="estadocivil">
+        <option value="solteiro">Solteiro</option> 
+        <option value="casado" selected>Casado</option>
+        <option value="divorciado">Divorciado</option>
+        </select>
+    <br><br>      
+    <label>Nome da Mãe *</label>
+    <input name="nomemae" type="text" required>
+    <br><br>       
+    <h2>Contatos</h2>         
+    <label>Email *</label>
+    <input name="email" type="text" required>
+    <br><br>    
+    <label>Telefone Residencial</label>
+    <input name="residencial" type="text" required>
+    <br><br>
+    <label>Telefone Comercial</label>
+    <input name="comercial" type="text" required>
+    <br><br>    
+    <h2>Profissional</h2>
+    <label>Profissão *</label>
+    <input name="profissao" type="text" required>
+    <br><br>        
+    <label>Renda *</label>
+    <input name="renda" type="text" required>
+    <br><br>        
+    <label>Empresa</label>
+    <input name="empresa" type="text" required>
+    <br><br>        
+    <h2>Residencial</h2>
+    <label>CEP</label>
+    <input name="cep" type="text" required>
+    <br><br>        
+    <label>Estado *</label>
+    <input name="estado" type="text" required>
+    <br><br>       
+    <label>Cidade *</label>
+    <input name="cidade" type="text" required>
+    <br><br>       
+    <label>Bairro</label>
+    <input name="bairro" type="text" required>
+    <br><br>          
+    <label>Rua *</label>
+    <input name="rua" type="text" required>
+    <br><br>    
+    <label>Número *</label>
+    <input name="numero" type="text" required>
+    <br><br>           
+    <label>Complemento *</label>
+    <input name="complemento" type="text" required>
+    <br><br>    
+    <h6>* Os dados coletados aqui serão enviados para o vendedor Michelle Lobo.
+** Não informe senhas pelos formulários!</h6>             
+    <button type="submit" class="btn btn-sucess" role="button">Enviar formulário</button>
+</main>
+{% endblock %}
