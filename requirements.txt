@@ -174,7 +174,6 @@ scipy==1.4.1
 scons==3.1.2
 seaborn==0.10.1
 simplejson==3.17.0
-sip==4.19.22
 six==1.15.0
 sklearn==0.0
 soupsieve==2.0
