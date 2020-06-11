@@ -193,3 +193,4 @@ whitenoise==5.0.1
 Wrapper==1.1.0b1
 WTForms==2.2.1
 zipp==3.1.0
+gobject-introspection==1.0
