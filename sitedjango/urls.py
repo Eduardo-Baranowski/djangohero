@@ -9,6 +9,7 @@ urlpatterns = [
     path('formulario/', views.formulario), 
     path('sobre/', views.sobre),
     path('servicos/', views.servicos),
+    path('home/servicos/', views.servicos),
     path('formulario/insereFormulario', views.insereFormulario), 
     
 ]
