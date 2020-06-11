@@ -181,8 +181,6 @@ speaklater==1.3
 SQLAlchemy==1.3.17
 sqlparse==0.2.4
 sshtunnel==0.1.5
-SSSDConfig==2.3.0
-subdownloader==2.1.0
 team==1.0
 testtools==2.4.0
 threadpoolctl==2.0.0
