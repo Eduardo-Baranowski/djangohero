@@ -163,7 +163,6 @@ pyzmq==19.0.1
 pyzo==4.10.2
 qtconsole==4.7.3
 QtPy==1.9.0
-rados==2.0.0
 rbd==2.0.0
 regex==2020.5.14
 reportlab==3.5.42
