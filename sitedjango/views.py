@@ -13,7 +13,10 @@ def home(request):
 
 def formulario(request):
     return render(request, 'formulario.html')
-    
+
+def planos(request):
+    return render(request, 'planos.html')
+
 def sobre(request):
     return render(request, 'sobre.html')
 
