@@ -11,6 +11,6 @@ urlpatterns = [
     path('planos/', views.planos),
     path('servicos/', views.servicos),
     path('home/servicos/', views.servicos),
-    path('formulario/insereFormulario', views.insereFormulario), 
+    path('formulario/insereFormulario', views.insereFormulario),
     
 ]

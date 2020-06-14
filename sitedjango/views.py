@@ -7,6 +7,8 @@ from .models import *
 from django import forms
 import smtplib
 from email.mime.text import MIMEText
+from django.http import HttpResponse
+
 
 def home(request):
     return render(request, 'home.html')
@@ -22,6 +24,9 @@ def sobre(request):
 
 def servicos(request):
     return render(request, 'servicos.html')
+
+def js(request):
+    return render(request, 'javascript.js')
 
 def insereFormulario(request):
     # conexão com os servidores do google
@@ -72,5 +77,5 @@ def insereFormulario(request):
     server.login(username, password)
     server.sendmail(from_addr, to_addrs, message.as_string())
     server.quit()
-        
-    return render(request, 'home.html')
+    
+    return render(request, 'cadastroSucesso.html')

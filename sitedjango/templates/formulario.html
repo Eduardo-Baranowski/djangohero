@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 {% block conteudo %}
+{% if alert_flag %}
+    <script>alert("Some Message.")</script>  
+{% endif %}
     <style>
     label, textarea {
         font-size: .8rem;
@@ -101,7 +104,14 @@
     <input name="complemento" type="text" required>
     <br><br>    
     <h6>* Os dados coletados aqui serão enviados para o vendedor Caroline Baranowski.
-** Não informe senhas pelos formulários!</h6>             
+** Não informe senhas pelos formulários!</h6>        
     <button type="submit" class="btn btn-sucess" role="button">Enviar formulário</button>
+    <script>
+            function sucesso() {
+        alert(
+            "Dados cadastrado com sucesso! Entraremos em contato!"
+        );
+        }
+    </script>
 </main>
 {% endblock %}
